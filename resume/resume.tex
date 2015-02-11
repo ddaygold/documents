@@ -3,6 +3,7 @@
 
 \documentclass{res} 
 \usepackage{enumitem}
+\usepackage{hyperref}
 \setlist{nolistsep,leftmargin=*}
 \addtolength{\topmargin}{-.5in}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
@@ -10,64 +11,86 @@
 \setlength{\textheight}{9.75in} % increase text height to fit on 1-page 
 
 \begin{document} 
-\name{Peter F. Chinetti \\ peter@chinetti.me\\[8pt]}     % the \\[12pt] adds a blank
-				        % line after name      
+\name{ \small{\href{mailto:peter@chinetti.me}{peter@chinetti.me}} | \large{Peter F. Chinetti} | \small{\href{http://peter.chinetti.me/}{peter.chinetti.me}} }
 
-\address{\bf  PRESENT ADDRESS\\Box 2032 \\3201 S. State St.\\Chicago, IL 60616\\(630).450.5725}
-\address{\bf PERMANENT ADDRESS \\2558 Breckeridge Ct.\\Aurora, IL 60504 \\  (630).978.1952}
+\address{\bf  PRESENT ADDRESS\\3366 S. Michigan Ave \\Chicago, IL 60616\\(630) 450-5725}
+\address{\bf PERMANENT ADDRESS \\2558 Breckeridge Ct.\\Aurora, IL 60504 \\  (630) 978-1952}
+                                  
                                   
 \begin{resume}
-
 \section{JOB OBJECTIVE}          
     An engineering position where I am challenged to build interesting and complex things.
  
 \section{EDUCATION}          
-    B.S. Computer Engineering, Illinois Institute of Technology, Ongoing\\
-    G.P.A. 3.3/4.0\\
-   {\bf Camras Scholar}\\
-        The Institute's highest undergraduate academic honor, the Camras Scholars Program challenges the top 1\% of the applicant pool to apply and interview with a faculty member for a place as a Camras Scholar. [1 of 30 in my class]\\
-    {\bf Duchossois Leadership Scholar} \emph{Member of the inaugural class}\\
-  The Duchossois Leadership Scholars Program is a nationally preeminent, elite scholarship program at IIT, attracting top students from across the country who have demonstrated exceptional leadership potential and academic success in their projected field. [1 of 3 in my class]
+
+\begin{format}
+  \title{l} \employer{c} \dates{r}\\
+\end{format}
+\title{B.S. Computer Engineering}
+\employer{\textsc{Illinois Institute of Technology}}
+\dates{GPA 3.3/4.0}
+\begin{position}
+\end{position}
+
+\begin{format}
+  \title{l}\\
+  \body\\
+\end{format}
+\title{\bf Camaras Scholar}
+\begin{position}
+        The Institute's highest undergraduate academic honor, the Camras Scholars Program challenges the top 1\% of the applicant pool to apply and interview with a faculty member for a place as a Camras Scholar. [1 of 30 in my class]
+\end{position}
+
+\title{{\bf Duchossois Leadership Scholar} \emph{Member of the inaugural class}}
+\begin{position}
+  The Duchossois Leadership Scholars Program is a nationally preeminent, elite scholarship program at IIT, attracting top students from across the country who have demonstrated exceptional leadership potential and academic success in their projected field. [1 of 3 in my class]. 
+\end{position}
  
 \section{EXPERIENCE}
-   \vspace{-0.1in}	
-   \begin{tabbing}
-   \hspace{1.3in}\= \hspace{3.6in}\= \kill % set up two tab positions
-    {\bf Summer Intern} \>Goldman Sachs \emph{\small{-Unix Engineering}} \>Summer 2013\\
-   \end{tabbing}\vspace{-20pt}
-   \begin{itemize}
-     \item Rewrote an application used to schedule automated operating system builds and automated tests of hardware and software.
-     \item The project used Python and Redis
-   \end{itemize}
+\begin{format}
+  \title{l} \employer{c} \dates{r}\\
+  \body\\
+\end{format}
 
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions          
-   {\bf International Participant}  \>Adelaide, South Australia \> May 2012\\
-   \end{tabbing}\vspace{-20pt}
-   \begin{itemize}
-       \item Attended Engineering Leadership Conference of Engineers Australia
-   \end{itemize}
+\employer{\textsc{Goldman Sachs}}
+\title{\bf Strats Summer Intern}
+\dates{Summer 2014}
+\begin{position}
+     Wrote code in C/C++ for automated market making in options, and an order routing system for equities. My modifications were in production by the end of the summer.
+\end{position}
 
-   \begin{tabbing}
-   \hspace{1.3in}\= \hspace{3.6in}\= \kill % set up two tab positions
-    {\bf Research Intern} \>Illinois Institute of Technology\emph{\small{-Electrical Engineering Dept.}} \>Summer 2012\\
-   \end{tabbing}\vspace{-20pt}
-   \begin{itemize}
-     \item Worked on a power engineering research team on a power system visualization. 
-     \item The project required visualization of systems up to the order of 100000 nodes. As such, much of the project revolved around finding optimization to improve framerate.
-     \item The project required coding in Java and C.
-     \item A paper detailing this project will be published in an undergraduate research journal.
-   \end{itemize}
+\employer{\textsc{Goldman Sachs}}
+\title{\bf Technology Summer Intern}
+\dates{Summer 2013}
+\begin{position}
+     Rewrote an application used to schedule automated operating system builds and automated tests of hardware and software.\\
+     The project used Python and Redis
+\end{position}
 
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Research Intern} \>Fermi National Accelerator Laboratory     \>Summer 2010\\
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   \begin{itemize}
-      \item Worked on an astrophysics research team to correlate modern telescope data using digital electronics with an older classification scheme using wet photography.
-      \item Assisted a physicist by constructing an anemometer (wind speed meter) out of spare parts found around the laboratory.
-      \item Wrote the website publishing the results of the projects.\\ http://quarknet.fnal.gov/fnal-uc/quarknet-summer-research/QNET2010/
-   \end{itemize}
+\employer{\textsc{Adelaide, South Australia}}
+\title{\bf International Participant}
+\dates{May 2012}
+\begin{position}
+  Attended Engineering Leadership Conference of Engineers Australia
+\end{position}
+
+\employer{\textsc{IIT EE Department}}
+\title{\bf Research Intern}
+\dates{Summer 2012}
+\begin{position}
+     Worked on a power engineering research team on a power system visualization in Java and C.\\
+     The project required visualization of systems up to the order of 100000 nodes. As such, much of the project revolved around finding optimization to improve framerate.\\
+     A paper detailing this project will be published in an undergraduate research journal.
+\end{position}
+
+\employer{\textsc{Fermilab}}
+\title{\bf Research Intern}
+\dates{Summer 2010}
+\begin{position}
+      Worked on an astrophysics research team to correlate modern telescope data using digital electronics with an older classification scheme using wet photography.\\
+      Assisted a physicist by constructing an anemometer (wind speed meter) out of spare parts found around the laboratory.\\
+      Wrote the website for the projects. \url{http://quarknet.fnal.gov/fnal-uc/quarknet-summer-research/QNET2010/}
+\end{position}
 
 %   \begin{tabbing}
 %   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions          
@@ -81,7 +104,7 @@
 
 
 \section{ENGINEERING SKILLS}          
-    Electronic and Mechanical Prototyping, Technical Research, Java, Python and C Programming, Linux, Windows, Project Management, \LaTeX.
+Electronic and Mechanical prototyping, Technical Research, Python, C/C++ and Java Programming, \LaTeX{}, Linux.
  
  
 %\section{HONORS AND AWARDS}          
@@ -90,10 +113,7 @@
 %    Dean's List
  
 \section{EXTRACURRICULAR ACTIVITIES}          
-    Illinois Tech Robotics Team
-    \begin{itemize}
-       \item Project lead of an electric diwheel robot.
-       \item Member of the Executive board and fundraising chair of the team.
-    \end{itemize}
+    {\bf Illinois Tech Robotics Team}, four year officer and board member.\\
+    My website \url{http://peter.chinetti.me} has a listing of personal projects and classwork.
 \end{resume}
 \end{document}
